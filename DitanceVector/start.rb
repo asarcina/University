@@ -19,14 +19,32 @@ params=[
 {:address=> 4, :links=>[[1,4],[4,1]]}
 
 ]
+
+max=10
+
 params.each do |p|
  
   threads << Thread.new do
-    nodes << Nodes.new(p[:address] , p[:links]) 
+    node=Nodes.new(p[:address] , p[:links]) 
+    nodes << node
     puts "nodo creato" + p[:address].to_s
+    #inizializzo i server che risponderanno alle richieste degli altri nodi che vogliono il distance vetctor
+    thread_server=Thread.new{node.start_server}
+   
+    count=0
+    #while(count<=max) do
+      #periodicamente controllo nella mia RoutingTable i nodi vicini dove destination_address==next_hop e li metto in un vettore
+    #per ogni nodi vicino nel vettore apro una socket client e richiedo il distance_vector del relativo nodo
+    #eseguo confronto e verifico con la mia RoutingTable se è il caso aggiorno altrimenti no
+      
+    #  end
+    puts "vicini"
+   puts node.get_neighbors
+    
+    thread_server.join
     end
 
  end
  
  
-# threads.each{|t| t.join}
+threads.each{|t| t.join}

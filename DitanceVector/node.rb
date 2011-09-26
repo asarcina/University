@@ -1,4 +1,5 @@
 require 'routing_table'
+require 'socket'
 class Nodes
   #variabili 
   #hash DV incicizzato sui nomi dei nodi
@@ -7,17 +8,18 @@ class Nodes
   
   #il nodo deve anche aprire una socket server e una client appena inizializzato
   attr_accessor :address , :rtable , :dist_vec , :port
-    @port=10000
+    
   def initialize(node_address,links)
     #inizializzo il nome del nodo
     #inizializzo la tabella di instradamento a 0
     #definisco le connessioni quindi una mappa dei nodi vicini
     #inizializzo il DV con i vicini
     @address = node_address
+    @port=10000
     @rtable=RoutingTable.new links
     @dist_vec=@rtable.getDistanceVector 
-    @port=@port+node_address.to_i
-   puts @rtable.table
+    @port=@port + @address
+    puts @rtable.table
 #    puts @address
 #    puts "----------"
 #    puts @dist_vec
@@ -32,11 +34,25 @@ class Nodes
         #--------------
         #funzione da eseguire sul client
         #invio dv
+        data=Marshal.dump(@dist_vec)
+        client.puts data
+        puts @address
         client.close
         end
     }
   end
+
+def get_neighbors
   
+  neighbors=[]
+  @rtable.table.each do |row|
+      if row[:next_hop]==row[:destination_address]
+        neighbor={:destination_address=>row[:destination_address], :cost=>row[:tot_cost]}
+        neighbors<<neighbors
+      end
+    end
+  neighbors 
+end  
   
 end
 
