@@ -19,7 +19,7 @@ class Nodes
     @rtable=RoutingTable.new links
     @dist_vec=@rtable.getDistanceVector 
     @port=@port + @address
-    puts @rtable.table
+    #puts @rtable.table
 #    puts @address
 #    puts "----------"
 #    puts @dist_vec
@@ -47,10 +47,13 @@ def get_neighbors
   neighbors=[]
   @rtable.table.each do |row|
       if row[:next_hop]==row[:destination_address]
-        neighbor={:destination_address=>row[:destination_address], :cost=>row[:tot_cost]}
-        neighbors<<neighbors
-      end
-    end
+        d=row[:destination_address]
+        c=row[:tot_cost]
+        neighbor={:destination_address=>d, :cost=>c}
+        #puts "vicino nodo "+@address.to_s+" :"+neighbor[:destination_address].to_s
+        neighbors<<neighbor
+      end 
+    end 
   neighbors 
 end  
   

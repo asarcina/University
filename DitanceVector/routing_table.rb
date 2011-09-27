@@ -25,6 +25,7 @@ def getDistanceVector
     entry[:tot_cost]=h[:tot_cost]
     @distance_vector << entry
     end
+  
   return @distance_vector
 end
   
