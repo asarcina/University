@@ -1,0 +1,731 @@
+--------------node 1 --------------
+Destination: 2	Next Hop: 2	Cost:2
+Destination: 4	Next Hop: 4	Cost:1
+Destination: 5	Next Hop: 5	Cost:5
+----inserted: 0 ------updated: 0 -------
+--------------node 2 --------------
+Destination: 1	Next Hop: 1	Cost:2
+Destination: 3	Next Hop: 3	Cost:4
+Destination: 5	Next Hop: 5	Cost:3
+----inserted: 0 ------updated: 0 -------
+--------------node 3 --------------
+Destination: 2	Next Hop: 2	Cost:4
+Destination: 5	Next Hop: 5	Cost:3
+Destination: 6	Next Hop: 6	Cost:2
+----inserted: 0 ------updated: 0 -------
+--------------node 4 --------------
+Destination: 1	Next Hop: 1	Cost:1
+Destination: 6	Next Hop: 6	Cost:2
+Destination: 5	Next Hop: 5	Cost:2
+----inserted: 0 ------updated: 0 -------
+--------------node 5 --------------
+Destination: 1	Next Hop: 1	Cost:5
+Destination: 4	Next Hop: 4	Cost:2
+Destination: 2	Next Hop: 2	Cost:3
+Destination: 3	Next Hop: 3	Cost:3
+----inserted: 0 ------updated: 0 -------
+--------------node 6 --------------
+Destination: 3	Next Hop: 3	Cost:2
+Destination: 4	Next Hop: 4	Cost:2
+----inserted: 0 ------updated: 0 -------
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node1.........
+Destination: 2	Cost:2
+Destination: 4	Cost:1
+Destination: 5	Cost:5
+..........................................
+............DIST-VECTOR node1.........
+Destination: 2	Cost:2
+Destination: 4	Cost:1
+Destination: 5	Cost:5
+..........................................
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node1.........
+Destination: 2	Cost:2
+Destination: 4	Cost:1
+Destination: 5	Cost:5
+..........................................
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+..........................................
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+..........................................
+............DIST-VECTOR node6.........
+Destination: 3	Cost:2
+Destination: 4	Cost:2
+Destination: 2	Cost:6
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:5
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+..........................................
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+..........................................
+--------------node 6 --------------
+Destination: 3	Next Hop: 3	Cost:2
+Destination: 4	Next Hop: 4	Cost:2
+Destination: 2	Next Hop: 3	Cost:6
+Destination: 1	Next Hop: 4	Cost:3
+----inserted: 1 ------updated: 0 -------
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node6.........
+Destination: 3	Cost:2
+Destination: 4	Cost:2
+Destination: 2	Cost:6
+Destination: 1	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+--------------node 4 --------------
+Destination: 1	Next Hop: 1	Cost:1
+Destination: 6	Next Hop: 6	Cost:2
+Destination: 5	Next Hop: 5	Cost:2
+Destination: 2	Next Hop: 1	Cost:3
+Destination: 3	Next Hop: 6	Cost:4
+----inserted: 0 ------updated: 0 -------
+--------------node 3 --------------
+Destination: 2	Next Hop: 2	Cost:4
+Destination: 5	Next Hop: 5	Cost:3
+Destination: 6	Next Hop: 6	Cost:2
+Destination: 1	Next Hop: 2	Cost:6
+----inserted: 0 ------updated: 0 -------
+--------------node 2 --------------
+Destination: 1	Next Hop: 1	Cost:2
+Destination: 3	Next Hop: 3	Cost:4
+Destination: 5	Next Hop: 5	Cost:3
+----inserted: 0 ------updated: 0 -------
+--------------node 1 --------------
+Destination: 2	Next Hop: 2	Cost:2
+Destination: 4	Next Hop: 4	Cost:1
+Destination: 5	Next Hop: 5	Cost:5
+----inserted: 0 ------updated: 0 -------
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+--------------node 5 --------------
+Destination: 1	Next Hop: 4	Cost:3
+Destination: 4	Next Hop: 4	Cost:2
+Destination: 2	Next Hop: 2	Cost:3
+Destination: 3	Next Hop: 3	Cost:3
+----inserted: 0 ------updated: 0 -------
+ new loop 1
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+ new loop 1
+ new loop 1
+ new loop 1
+ new loop 1
+............DIST-VECTOR node1.........
+Destination: 2	Cost:2
+Destination: 4	Cost:1
+Destination: 5	Cost:5
+..........................................
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node1.........
+Destination: 2	Cost:2
+Destination: 4	Cost:1
+Destination: 5	Cost:5
+..........................................
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:4
+..........................................
+ new loop 1
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:4
+..........................................
+............DIST-VECTOR node6.........
+Destination: 3	Cost:2
+Destination: 4	Cost:2
+Destination: 2	Cost:6
+Destination: 1	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:4
+..........................................
+--------------node 6 --------------
+Destination: 3	Next Hop: 3	Cost:2
+Destination: 4	Next Hop: 4	Cost:2
+Destination: 2	Next Hop: 3	Cost:6
+Destination: 1	Next Hop: 4	Cost:3
+----inserted: 0 ------updated: 0 -------
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node6.........
+Destination: 3	Cost:2
+Destination: 4	Cost:2
+Destination: 2	Cost:6
+Destination: 1	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+--------------node 4 --------------
+Destination: 1	Next Hop: 1	Cost:1
+Destination: 6	Next Hop: 6	Cost:2
+Destination: 5	Next Hop: 5	Cost:2
+Destination: 2	Next Hop: 1	Cost:3
+Destination: 3	Next Hop: 6	Cost:4
+----inserted: 0 ------updated: 0 -------
+--------------node 3 --------------
+Destination: 2	Next Hop: 2	Cost:4
+Destination: 5	Next Hop: 5	Cost:3
+Destination: 6	Next Hop: 6	Cost:2
+Destination: 1	Next Hop: 2	Cost:6
+----inserted: 0 ------updated: 0 -------
+--------------node 2 --------------
+Destination: 1	Next Hop: 1	Cost:2
+Destination: 3	Next Hop: 3	Cost:4
+Destination: 5	Next Hop: 5	Cost:3
+----inserted: 0 ------updated: 0 -------
+--------------node 1 --------------
+Destination: 2	Next Hop: 2	Cost:2
+Destination: 4	Next Hop: 4	Cost:1
+Destination: 5	Next Hop: 5	Cost:5
+----inserted: 0 ------updated: 0 -------
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+--------------node 5 --------------
+Destination: 1	Next Hop: 4	Cost:3
+Destination: 4	Next Hop: 4	Cost:2
+Destination: 2	Next Hop: 2	Cost:3
+Destination: 3	Next Hop: 3	Cost:3
+----inserted: 0 ------updated: 0 -------
+ new loop 2
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:4
+..........................................
+ new loop 2
+ new loop 2
+ new loop 2
+ new loop 2
+............DIST-VECTOR node1.........
+Destination: 2	Cost:2
+Destination: 4	Cost:1
+Destination: 5	Cost:5
+..........................................
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node1.........
+Destination: 2	Cost:2
+Destination: 4	Cost:1
+Destination: 5	Cost:5
+..........................................
+--------------node 6 --------------
+Destination: 3	Next Hop: 3	Cost:2
+Destination: 4	Next Hop: 4	Cost:2
+Destination: 2	Next Hop: 3	Cost:6
+Destination: 1	Next Hop: 4	Cost:3
+----inserted: 0 ------updated: 0 -------
+ new loop 2
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:4
+..........................................
+............DIST-VECTOR node6.........
+Destination: 3	Cost:2
+Destination: 4	Cost:2
+Destination: 2	Cost:6
+Destination: 1	Cost:3
+..........................................
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:4
+..........................................
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node6.........
+Destination: 3	Cost:2
+Destination: 4	Cost:2
+Destination: 2	Cost:6
+Destination: 1	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+--------------node 4 --------------
+Destination: 1	Next Hop: 1	Cost:1
+Destination: 6	Next Hop: 6	Cost:2
+Destination: 5	Next Hop: 5	Cost:2
+Destination: 2	Next Hop: 1	Cost:3
+Destination: 3	Next Hop: 6	Cost:4
+----inserted: 0 ------updated: 0 -------
+--------------node 3 --------------
+Destination: 2	Next Hop: 2	Cost:4
+Destination: 5	Next Hop: 5	Cost:3
+Destination: 6	Next Hop: 6	Cost:2
+Destination: 1	Next Hop: 2	Cost:6
+----inserted: 0 ------updated: 0 -------
+--------------node 2 --------------
+Destination: 1	Next Hop: 1	Cost:2
+Destination: 3	Next Hop: 3	Cost:4
+Destination: 5	Next Hop: 5	Cost:3
+----inserted: 0 ------updated: 0 -------
+--------------node 1 --------------
+Destination: 2	Next Hop: 2	Cost:2
+Destination: 4	Next Hop: 4	Cost:1
+Destination: 5	Next Hop: 5	Cost:5
+----inserted: 0 ------updated: 0 -------
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+--------------node 5 --------------
+Destination: 1	Next Hop: 4	Cost:3
+Destination: 4	Next Hop: 4	Cost:2
+Destination: 2	Next Hop: 2	Cost:3
+Destination: 3	Next Hop: 3	Cost:3
+----inserted: 0 ------updated: 0 -------
+ new loop 3
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:4
+..........................................
+--------------node 6 --------------
+Destination: 3	Next Hop: 3	Cost:2
+Destination: 4	Next Hop: 4	Cost:2
+Destination: 2	Next Hop: 3	Cost:6
+Destination: 1	Next Hop: 4	Cost:3
+----inserted: 0 ------updated: 0 -------
+ new loop 3
+ new loop 3
+ new loop 3
+ new loop 3
+............DIST-VECTOR node1.........
+Destination: 2	Cost:2
+Destination: 4	Cost:1
+Destination: 5	Cost:5
+..........................................
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node1.........
+Destination: 2	Cost:2
+Destination: 4	Cost:1
+Destination: 5	Cost:5
+..........................................
+ new loop 3
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:4
+..........................................
+............DIST-VECTOR node6.........
+Destination: 3	Cost:2
+Destination: 4	Cost:2
+Destination: 2	Cost:6
+Destination: 1	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:4
+..........................................
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node6.........
+Destination: 3	Cost:2
+Destination: 4	Cost:2
+Destination: 2	Cost:6
+Destination: 1	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+--------------node 4 --------------
+Destination: 1	Next Hop: 1	Cost:1
+Destination: 6	Next Hop: 6	Cost:2
+Destination: 5	Next Hop: 5	Cost:2
+Destination: 2	Next Hop: 1	Cost:3
+Destination: 3	Next Hop: 6	Cost:4
+----inserted: 0 ------updated: 0 -------
+--------------node 3 --------------
+Destination: 2	Next Hop: 2	Cost:4
+Destination: 5	Next Hop: 5	Cost:3
+Destination: 6	Next Hop: 6	Cost:2
+Destination: 1	Next Hop: 2	Cost:6
+----inserted: 0 ------updated: 0 -------
+--------------node 2 --------------
+Destination: 1	Next Hop: 1	Cost:2
+Destination: 3	Next Hop: 3	Cost:4
+Destination: 5	Next Hop: 5	Cost:3
+----inserted: 0 ------updated: 0 -------
+--------------node 1 --------------
+Destination: 2	Next Hop: 2	Cost:2
+Destination: 4	Next Hop: 4	Cost:1
+Destination: 5	Next Hop: 5	Cost:5
+----inserted: 0 ------updated: 0 -------
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+--------------node 5 --------------
+Destination: 1	Next Hop: 4	Cost:3
+Destination: 4	Next Hop: 4	Cost:2
+Destination: 2	Next Hop: 2	Cost:3
+Destination: 3	Next Hop: 3	Cost:3
+----inserted: 0 ------updated: 0 -------
+ new loop 4
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:4
+..........................................
+--------------node 6 --------------
+Destination: 3	Next Hop: 3	Cost:2
+Destination: 4	Next Hop: 4	Cost:2
+Destination: 2	Next Hop: 3	Cost:6
+Destination: 1	Next Hop: 4	Cost:3
+----inserted: 0 ------updated: 0 -------
+ new loop 4
+ new loop 4
+ new loop 4
+ new loop 4
+............DIST-VECTOR node1.........
+Destination: 2	Cost:2
+Destination: 4	Cost:1
+Destination: 5	Cost:5
+..........................................
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node1.........
+Destination: 2	Cost:2
+Destination: 4	Cost:1
+Destination: 5	Cost:5
+..........................................
+ new loop 4
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:4
+..........................................
+............DIST-VECTOR node6.........
+Destination: 3	Cost:2
+Destination: 4	Cost:2
+Destination: 2	Cost:6
+Destination: 1	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+............DIST-VECTOR node4.........
+Destination: 1	Cost:1
+Destination: 6	Cost:2
+Destination: 5	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:4
+..........................................
+............DIST-VECTOR node2.........
+Destination: 1	Cost:2
+Destination: 3	Cost:4
+Destination: 5	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node6.........
+Destination: 3	Cost:2
+Destination: 4	Cost:2
+Destination: 2	Cost:6
+Destination: 1	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+............DIST-VECTOR node5.........
+Destination: 1	Cost:3
+Destination: 4	Cost:2
+Destination: 2	Cost:3
+Destination: 3	Cost:3
+..........................................
+--------------node 4 --------------
+Destination: 1	Next Hop: 1	Cost:1
+Destination: 6	Next Hop: 6	Cost:2
+Destination: 5	Next Hop: 5	Cost:2
+Destination: 2	Next Hop: 1	Cost:3
+Destination: 3	Next Hop: 6	Cost:4
+----inserted: 0 ------updated: 0 -------
+--------------node 3 --------------
+Destination: 2	Next Hop: 2	Cost:4
+Destination: 5	Next Hop: 5	Cost:3
+Destination: 6	Next Hop: 6	Cost:2
+Destination: 1	Next Hop: 2	Cost:6
+----inserted: 0 ------updated: 0 -------
+--------------node 2 --------------
+Destination: 1	Next Hop: 1	Cost:2
+Destination: 3	Next Hop: 3	Cost:4
+Destination: 5	Next Hop: 5	Cost:3
+----inserted: 0 ------updated: 0 -------
+--------------node 1 --------------
+Destination: 2	Next Hop: 2	Cost:2
+Destination: 4	Next Hop: 4	Cost:1
+Destination: 5	Next Hop: 5	Cost:5
+----inserted: 0 ------updated: 0 -------
+............DIST-VECTOR node3.........
+Destination: 2	Cost:4
+Destination: 5	Cost:3
+Destination: 6	Cost:2
+Destination: 1	Cost:6
+..........................................
+--------------node 5 --------------
+Destination: 1	Next Hop: 4	Cost:3
+Destination: 4	Next Hop: 4	Cost:2
+Destination: 2	Next Hop: 2	Cost:3
+Destination: 3	Next Hop: 3	Cost:3
+----inserted: 0 ------updated: 0 -------
+
+ Torni a trovarci :D
