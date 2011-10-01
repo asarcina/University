@@ -1,8 +1,9 @@
 require 'node'
 require 'socket'
+require 'cpannel'
 
 #ogni nodo mi fa partire un thread che dovrà simulare  un nodo indipendente su una macchina distinta
-threads=[]
+@@threads=[]
 nodes=[]
 
 hostname='localhost'
@@ -16,14 +17,16 @@ params=[
 {:address=> 6, :links=>[[3,2],[4,2]]}
 ]
 
+
+
 max=10
 
-trap("INT") {puts "\n Torni a trovarci :D" ; exit}
+#trap("INT") {puts "\n Torni a trovarci :D" ; exit}
 
 
 params.each do |p|
  
-  threads << Thread.new do
+  @@threads << Thread.new do
     node=Nodes.new(p[:address] , p[:links]) 
     nodes << node
     #puts "nodo creato" + p[:address].to_s
@@ -39,6 +42,7 @@ params.each do |p|
     count=0
     
     while(count <= max) do
+      
      status=[nodes.size]
       neighbors=node.get_neighbors
      # puts "vicini nodo: "+node.address.to_s
@@ -56,23 +60,33 @@ params.each do |p|
       #distance vector da analizzare
       #check dv con routing_table e :tot_cost del vicino ed eventualmente aggiorno
         dv=Marshal.load(data)
-#        node.rtable.print_distance_vector(dv, n[:destination_address])
-#        sleep(2)
-        status[node.address] = node.check_and_update(dv,n[:cost], n[:destination_address])
         
+        #node.rtable.print_distance_vector(dv, n[:destination_address])
+        
+       # sleep(2)
+        status[node.address] = node.check_and_update(dv,n[:cost], n[:destination_address])
+        #
         s.close
       end# each
+      #puts @@threads
       node.rtable.print_routing_table(node.address, status)
       sleep(20)
       
       count=count+1
+      if( count==3 && (Thread.current == @@threads[3]))
+          Thread.exit
+      end
+      #puts Thread.list
       puts " new loop "+count.to_s
     end #while count
     
     thread_server.join
+    
     end
 
  end
  
- 
-threads.each{|t| t.join}
+pannel=Cpannel.new
+pannel.thread_exit_pannel(@@threads)
+
+@@threads.each{|t| t.join}
